@@ -203,7 +203,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/chats');
+                    Navigator.pushNamed(context, '/chatdetail');
                   },
                   child: const Text('Chats'),
                 ),

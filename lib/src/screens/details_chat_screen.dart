@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Chat_ScreenDetail extends StatelessWidget {
-  const Chat_ScreenDetail({Key? key}) : super(key: key);
+class ChatScreenDetail extends StatelessWidget {
+  const ChatScreenDetail({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class Chat_ScreenDetail extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(15.0, 10.0, 5.0, 5.0),
               child: Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.keyboard_backspace,
                     color: Color.fromRGBO(137, 111, 111, 1),
                     size: 30,
@@ -25,7 +25,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                   SizedBox(
                     width: width / 4,
                   ),
-                  Text(
+                  const Text(
                     'Chats',
                     style: TextStyle(fontSize: 28.0),
                   ),
@@ -41,7 +41,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                       leading: Image.asset('assets/images/user_img.png'),
                       title: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Shailey',
                             style: TextStyle(
@@ -57,7 +57,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                           )
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Will pick you at Gandhi Maidan',
                         style:
                             TextStyle(color: Color.fromRGBO(144, 123, 123, 1)),
@@ -67,7 +67,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                       leading: Image.asset('assets/images/user_img.png'),
                       title: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Shailey',
                             style: TextStyle(
@@ -83,7 +83,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                           )
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Will pick you at Gandhi Maidan',
                         style:
                             TextStyle(color: Color.fromRGBO(144, 123, 123, 1)),
@@ -93,7 +93,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                       leading: Image.asset('assets/images/user_img.png'),
                       title: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Shailey',
                             style: TextStyle(
@@ -109,7 +109,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                           )
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Will pick you at Gandhi Maidan',
                         style:
                             TextStyle(color: Color.fromRGBO(144, 123, 123, 1)),
@@ -119,7 +119,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                       leading: Image.asset('assets/images/user_img.png'),
                       title: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Shailey',
                             style: TextStyle(
@@ -135,7 +135,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                           )
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Will pick you at Gandhi Maidan',
                         style:
                             TextStyle(color: Color.fromRGBO(144, 123, 123, 1)),
@@ -145,7 +145,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                       leading: Image.asset('assets/images/user_img.png'),
                       title: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Shailey',
                             style: TextStyle(
@@ -161,7 +161,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                           )
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Will pick you at Gandhi Maidan',
                         style:
                             TextStyle(color: Color.fromRGBO(144, 123, 123, 1)),
@@ -171,7 +171,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                       leading: Image.asset('assets/images/user_img.png'),
                       title: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Shailey',
                             style: TextStyle(
@@ -187,7 +187,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                           )
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Will pick you at Gandhi Maidan',
                         style:
                             TextStyle(color: Color.fromRGBO(144, 123, 123, 1)),
@@ -197,7 +197,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                       leading: Image.asset('assets/images/user_img.png'),
                       title: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Shailey',
                             style: TextStyle(
@@ -213,7 +213,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                           )
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Will pick you at Gandhi Maidan',
                         style:
                             TextStyle(color: Color.fromRGBO(144, 123, 123, 1)),
@@ -223,7 +223,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                       leading: Image.asset('assets/images/user_img.png'),
                       title: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Shailey',
                             style: TextStyle(
@@ -239,7 +239,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                           )
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Will pick you at Gandhi Maidan',
                         style:
                             TextStyle(color: Color.fromRGBO(144, 123, 123, 1)),
@@ -249,7 +249,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                       leading: Image.asset('assets/images/user_img.png'),
                       title: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Shailey',
                             style: TextStyle(
@@ -265,7 +265,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                           )
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Will pick you at Gandhi Maidan',
                         style:
                             TextStyle(color: Color.fromRGBO(144, 123, 123, 1)),
@@ -275,7 +275,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                       leading: Image.asset('assets/images/user_img.png'),
                       title: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Shailey',
                             style: TextStyle(
@@ -291,7 +291,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                           )
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Will pick you at Gandhi Maidan',
                         style:
                             TextStyle(color: Color.fromRGBO(144, 123, 123, 1)),
@@ -301,7 +301,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                       leading: Image.asset('assets/images/user_img.png'),
                       title: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Shailey',
                             style: TextStyle(
@@ -317,7 +317,7 @@ class Chat_ScreenDetail extends StatelessWidget {
                           )
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Will pick you at Gandhi Maidan',
                         style:
                             TextStyle(color: Color.fromRGBO(144, 123, 123, 1)),

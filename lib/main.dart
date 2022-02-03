@@ -64,7 +64,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       navigatorKey: getIt<NavigationService>().navigatorKey,
       title: 'Ride Sharing',
-      initialRoute: '/splash',
+      // initialRoute: '/splash',
+      initialRoute: '/',
       onGenerateRoute: RouteGenerator.generateRoute,
       debugShowCheckedModeBanner: false,
       theme: FlexThemeData.light(scheme: FlexScheme.indigo).copyWith(
@@ -240,7 +241,7 @@ class _MyAppState extends State<MyApp> {
       //     ),
       //   ),
       // ),
-// 
+//
     );
   }
 }
