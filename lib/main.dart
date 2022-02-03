@@ -11,15 +11,7 @@ import 'package:ride_sharing/config/app_config.dart' as config;
 import 'package:ride_sharing/provider/getit.dart';
 import 'package:ride_sharing/route_generator.dart';
 import 'package:flutter/material.dart';
-import 'package:ride_sharing/src/models/user.dart';
-import 'package:ride_sharing/src/screens/chat_screen/chat_screen.dart';
-import 'package:ride_sharing/src/screens/riderRequest.dart';
-import 'src/screens/phone_auth/verification.dart';
-import 'package:ride_sharing/src/screens/user_profile/user_profile.dart';
-import 'package:ride_sharing/view/user_profile_viewmodel.dart';
-import './src/screens/riderRequest.dart';
 import 'package:ride_sharing/services/navigation_service.dart';
-import './src/screens/chat_screen/chat_screen.dart';
 
 Future<void> saveTokenToDatabase(String? token) async {
   final String? uid = FirebaseAuth.instance.currentUser?.uid;
@@ -178,6 +170,7 @@ class _MyAppState extends State<MyApp> {
       ),
       // Use dark or light theme based on system setting.
       themeMode: ThemeMode.system,
+<<<<<<< HEAD
       // theme: ThemeData(
       //   // fontFamily: 'Poppins',
       //   colorScheme: const ColorScheme.light(
@@ -242,6 +235,8 @@ class _MyAppState extends State<MyApp> {
       //   ),
       // ),
 //
+=======
+>>>>>>> b1f6be0e51abebc7dfd0c6f997f1d1e1346edb9c
     );
   }
 }
