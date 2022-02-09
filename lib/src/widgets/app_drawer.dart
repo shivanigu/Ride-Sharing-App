@@ -99,6 +99,12 @@ class _AppDrawerState extends State<AppDrawer> {
           _createDrawerItem(
               icon: Icons.help_center, text: 'Your vehicle info', onTap: () {}),
           _createDrawerItem(
+              icon: Icons.chat,
+              text: 'Chats',
+              onTap: () {
+                Navigator.pushNamed(context, '/chatdetail');
+              }),
+          _createDrawerItem(
               icon: Icons.payments, text: 'Payments', onTap: () {}),
           _createDrawerItem(
             icon: Icons.logout,

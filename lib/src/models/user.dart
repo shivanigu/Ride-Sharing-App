@@ -1,5 +1,9 @@
 import 'dart:convert';
 
+import 'package:ride_sharing/src/utils/userUtils.dart';
+
+// import 'package:ride_sharing/src/screens/home_chat_screen.dart';
+
 UserProfileModel userProfileFromJson(Map<String, dynamic>? data) =>
     UserProfileModel.fromJson(data!);
 
@@ -16,6 +20,7 @@ class UserProfileModel {
     required this.gender,
     required this.age,
     required this.profile,
+    required this.lastCommunicationTime,
   });
 
   final String? name;
@@ -26,6 +31,7 @@ class UserProfileModel {
   final String? address;
   final String? gender;
   final String? age;
+  final DateTime? lastCommunicationTime;
   String profile =
       "https://firebasestorage.googleapis.com/v0/b/ride-share-a1e6e.appspot.com/o/profile_photos%2Fuser_img.png?alt=media&token=1ac398e6-0e34-417c-9cc6-652cae3b6e5b";
 
@@ -39,6 +45,7 @@ class UserProfileModel {
         address: json["address"],
         gender: json["gender"],
         age: json["age"],
+        lastCommunicationTime: Utils.toDateTime(json['lastCommunicationTime']),
         profile: json["profile"] ??
             "https://firebasestorage.googleapis.com/v0/b/ride-share-a1e6e.appspot.com/o/profile_photos%2Fuser_img.png?alt=media&token=1ac398e6-0e34-417c-9cc6-652cae3b6e5b",
       );
@@ -53,5 +60,7 @@ class UserProfileModel {
         "gender": gender,
         "age": age,
         "profile": profile,
+        "lastCommunicationTime":
+            Utils.fromDateTimeToJson(lastCommunicationTime!),
       };
 }

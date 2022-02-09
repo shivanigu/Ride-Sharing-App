@@ -148,66 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onPressed: () {
                     model.generateAndSaveOtp();
                   },
-<<<<<<< HEAD
-                  child: const Text('Complete Profile'),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/user-profile');
-                  },
-                  child: const Text('User Profile'),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/available-riders');
-                  },
-                  child: const Text('Available Riders'),
-                ),
-
-                // ElevatedButton(
-                //   onPressed: () {
-                //     Navigator.pushNamed(context, '/rider-details');
-                //   },
-                //   child: const Text('Rider Details'),
-                // ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(
-                      context,
-                      '/available-drivers',
-                      arguments: "aOG5i3YIccmhMnADEEqb",
-                    );
-                  },
-                  child: const Text('Available Drivers'),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/chatdetail');
-                  },
-                  child: const Text('Chats'),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/ride-details');
-                  },
-                  child: const Text('Ride Details'),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/access-permission');
-                  },
-                  child: const Text('Access Permission'),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const TestScreen()));
-                  },
-                  child: const Text('Test Screen'),
-                ),
-=======
                 )
->>>>>>> b1f6be0e51abebc7dfd0c6f997f1d1e1346edb9c
               ],
             ),
 
@@ -294,7 +235,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, '/chats');
+                      Navigator.pushNamed(context, '/chatdetail');
                     },
                     child: const Text('Chats'),
                   ),

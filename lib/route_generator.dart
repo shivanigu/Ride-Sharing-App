@@ -2,6 +2,7 @@ import 'package:ride_sharing/src/screens/access_permission_page.dart';
 import 'package:ride_sharing/src/screens/add_vehicle.dart';
 import 'package:ride_sharing/src/screens/available_drivers/available_drivers.dart';
 import 'package:ride_sharing/src/screens/available_riders/available_rider.dart';
+import 'package:ride_sharing/src/screens/chats/chats_page.dart';
 import 'package:ride_sharing/src/screens/details_chat_screen.dart';
 import 'package:ride_sharing/src/screens/driver_details/driver_details.dart';
 import 'package:ride_sharing/src/screens/rider_details/rider_details.dart';
@@ -59,8 +60,7 @@ class RouteGenerator {
       case '/ride-details':
         return MaterialPageRoute(builder: (_) => const RideDetails());
       case '/chatdetail':
-        // return MaterialPageRoute(builder: (_) => ChatScreen(peer: args));
-        return MaterialPageRoute(builder: (_) => const ChatScreenDetail());
+        return MaterialPageRoute(builder: (_) => const ChatPage());
       case '/chats':
         return MaterialPageRoute(builder: (_) => ChatScreen(peer: args));
       case '/post-ride':

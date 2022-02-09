@@ -6,7 +6,6 @@ import 'package:ride_sharing/src/widgets/app_bar.dart';
 import 'package:ride_sharing/view/chat_viewmodel.dart';
 import 'package:ride_sharing/config/app_config.dart' as config;
 
-
 import 'chatscreen_components/chat_screen_body.dart';
 
 class ChatScreen extends StatelessWidget {
@@ -46,19 +45,18 @@ class ChatScreen extends StatelessWidget {
                       ),
                       borderRadius: BorderRadius.circular(8.0)),
                   child: Row(
-                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      
                       SizedBox(
                         width: MediaQuery.of(context).size.width * 0.6,
                         child: Padding(
                           padding: const EdgeInsets.fromLTRB(2.0, 2.0, 0, 4.0),
                           child: TextFormField(
-                            onFieldSubmitted:(_)=>{
-                               model.saveChatMessage(),
-                          model.message = '',
-                          clearText(),
+                            onFieldSubmitted: (_) => {
+                              model.saveChatMessage(),
+                              model.message = '',
+                              clearText(),
                             },
                             controller: fieldText,
                             decoration: InputDecoration(
@@ -76,26 +74,23 @@ class ChatScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                        Container(
-                          margin: const EdgeInsets.only(top: 10),
-                          height: 35,
-                          width: 35,
-                          child: GestureDetector(
+                      Container(
+                        margin: const EdgeInsets.only(top: 10),
+                        height: 35,
+                        width: 35,
+                        child: GestureDetector(
                           onTap: () async {
                             await model.pickImage(context);
-                        
                           },
                           child: Image.asset('assets/images/album.png'),
-                      ),
                         ),
-                    
+                      ),
                       IconButton(
                         onPressed: () {
                           model.saveChatMessage();
                           model.message = '';
                           clearText();
                         },
-                        
                         icon: Icon(
                           Icons.send,
                           color: config.ThemeColors().mainColor(1),
